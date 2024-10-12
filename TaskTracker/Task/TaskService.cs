@@ -139,5 +139,32 @@ namespace TaskTracker.Task
                 Console.WriteLine(item.Description);
             }
         }
+
+        public void ListAllTasksTodo()
+        {
+            foreach (var item in Tasks)
+            {
+                if (item.status == Task.Status.Todo)
+                    Console.WriteLine(item.Description);
+            }
+        }
+
+        public void ListAllTasksInProgress()
+        {
+            foreach (var item in Tasks)
+            {
+                if (item.status == Task.Status.In_Progress)
+                    Console.WriteLine(item.Description);
+            }
+        }
+
+        public void ListAllTasksDone()
+        {
+            foreach (var item in Tasks)
+            {
+                if (item.status == Task.Status.Done)
+                    Console.WriteLine(item.Description);
+            }
+        }
     }
 }

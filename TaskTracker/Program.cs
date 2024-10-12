@@ -37,4 +37,19 @@ app.AddCommand("list", (TaskService service) =>
     service.ListAll();
 });
 
+app.AddCommand("list-done", (TaskService service) =>
+{
+    service.ListAllTasksDone();
+});
+
+app.AddCommand("list-todo", (TaskService service) =>
+{
+    service.ListAllTasksTodo();
+});
+
+app.AddCommand("list-in-progress", (TaskService service) =>
+{
+    service.ListAllTasksInProgress();
+});
+
 app.Run();
