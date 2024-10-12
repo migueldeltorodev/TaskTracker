@@ -29,4 +29,4 @@ Before run the app you should install this basics nuget packages from NuGet Pack
 6. To list all tasks: `dotnet run -- list`
 7. To list all tasks that are done: `dotnet run -- list-done`
 8. To list all tasks that are not done: `dotnet run -- list-todo`
-9. To list all tasks that are in progress: `dotnet run -- list-in-progress
+9. To list all tasks that are in progress: `dotnet run -- list-in-progress`
