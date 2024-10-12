@@ -131,5 +131,13 @@ namespace TaskTracker.Task
             SaveTasksToFile(1);
             return 1;
         }
+
+        public void ListAll()
+        {
+            foreach (var item in Tasks)
+            {
+                Console.WriteLine(item.Description);
+            }
+        }
     }
 }

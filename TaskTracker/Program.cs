@@ -32,4 +32,9 @@ app.AddCommand("mark-done", (int id, TaskService service) =>
     service.MarkDone(--id);
 });
 
+app.AddCommand("list", (TaskService service) =>
+{
+    service.ListAll();
+});
+
 app.Run();
